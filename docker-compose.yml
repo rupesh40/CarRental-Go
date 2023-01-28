@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: "Car_Rental_API"
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db 
+    networks:
+      - fullstack    
+    volumes:
+      - .:/usr/src/app
+    command: go run cmd/main.go -b 0.0.0.0  
+  db: 
+    image: postgres:alpine
+    container_name: "database"
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASS}
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_HOST=${DB_HOST}
+    ports:
+      - "5432:5432"
+    networks:
+      - fullstack  
+    volumes:
+      - db_postgres:/var/lib/postgresql/data
+
+volumes:
+  db_postgres:
+
+networks:
+  fullstack:
+    driver: bridge   

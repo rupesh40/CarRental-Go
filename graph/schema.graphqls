@@ -1,0 +1,77 @@
+type Car{
+  id: ID!
+  car_model: String!
+  date_of_manufacture: String!
+  last_service_date: String!
+  last_used_date: String!
+  status: String!
+}
+
+type Query {
+  cars: [Car!]!
+  car(id:ID!): Car!
+}
+
+# type User {
+#   id: ID!
+#   first_name: String!
+#   last_name: String!
+#   password: String!
+#   email: String!
+#   phone: String! 
+#   user_type: String!
+#   token: String!
+#   refresh_token: String!
+#   created_at: Timestamp!
+#   updated_at: Timestamp!
+# }
+
+# type Query{
+#  users: [User!]!
+#   user(id:ID!): User!
+# }
+# type Mutation {
+#   createUser(input: CreateUserInput!): User!
+#   updateUser(id: ID!,input: UpdateUserInput!): User!
+#   deleteUser(id: ID!): DeleteUserResponse!
+#   createCar(input: CreateCarInput!): Car!
+#   updateCar(id: ID!,input: UpdateCarInput!): Car!
+#   deleteCar(id: ID!): DeleteCarResponse!
+# }
+
+# input CreateUserInput{
+#   first_name: String!
+#   last_name: Boolean!
+#   password: String!
+#   email: String!
+#   phone: String! 
+#   user_type: String!
+# }
+# input UpdateUserInput{
+#   first_name: String
+#   last_name: Boolean
+#   email: String
+#   phone: String 
+#   user_type: String
+# }
+
+# input CreateCarInput{
+#   car_model: String!
+#   date_of_manufacture: String!
+#   last_service_date: String
+#   last_used_date: String
+#   status: String! 
+# }
+# input UpdateCarInput{
+#   car_model: String
+#   date_of_manufacture: String
+#   last_service_date: String
+#   last_used_date: String
+#   status: String
+# }
+# type DeleteUserResponse{
+#   deleteJobId: String!
+# }
+# type DeleteCarResponse{
+#   deleteCarId: String!
+# }
