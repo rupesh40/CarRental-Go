@@ -89,8 +89,23 @@ value = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IiIsIkZpcnN0X25hbWUiOi
 
 - (GET request )url : `http://localhost:3000/cars`
 
-!!! DONT FORGET TO ADD JWT-TOKEN BEFORE SENDING REQUEST !!!
-
+       OR
+       
+- Graphql querry := 
+`
+query GetAllCars
+    { 
+        cars{ 
+            id 
+            car_model
+            date_of_manufacture
+            last_service_date
+            last_used_date
+            status                
+            } 
+    }
+`
+- !!! DONT FORGET TO ADD JWT-TOKEN BEFORE SENDING REQUEST !!!
 - You will get list of all cars in the database
 
 - Copy the id of any car you want to rent/book
@@ -103,6 +118,8 @@ value = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6IiIsIkZpcnN0X25hbWUiOi
 
 - Add the carID in the request
  example : `http://localhost:3000/cars/bookCar/4ef1af7e-3076-4c29-9358-4365cd42f0d8`
+ 
+ 
 
 !!! DONT FORGET TO ADD JWT-TOKEN BEFORE SENDING REQUEST !!!
 
