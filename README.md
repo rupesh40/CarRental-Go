@@ -4,10 +4,11 @@
 
 
 To Run this project locally without Docker 
+
 1. clone repository 
 2. Run `go mod tidy`  to install go dependancies
 3. Setup postgres locally, Create user, setup password, create database, grant database access to user
-4. Update .env file with username, password and DB_name 
+4. Update .env file with username, password and DB_name and change the DB_HOST = localhost
 5. Run `go run cmd/main.go`  
 
 With Docker : 
