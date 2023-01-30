@@ -6,8 +6,8 @@ package graph
 
 import (
 	"context"
-	"github.com/rupesh40/go-car-rental/V1/database"
-	"github.com/rupesh40/go-car-rental/V1/graph/model"
+	"github.com/rupesh40/CarRental-Go/database"
+	"github.com/rupesh40/CarRental-Go/graph/model"
 )
 
 // Cars is the resolver for the cars field.

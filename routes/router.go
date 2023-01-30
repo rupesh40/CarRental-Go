@@ -2,8 +2,8 @@ package routes
 
 import (
 	"github.com/gin-gonic/gin"
-	controller "github.com/rupesh40/go-car-rental/V1/controllers"
-	"github.com/rupesh40/go-car-rental/V1/middleware"
+	controller "github.com/rupesh40/CarRental-Go/controllers"
+	"github.com/rupesh40/CarRental-Go/middleware"
 )
 func Routes(incomingRoutes *gin.Engine){
 	incomingRoutes.Use(middleware.Authenticate())

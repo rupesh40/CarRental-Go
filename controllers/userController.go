@@ -10,9 +10,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
-	"github.com/rupesh40/go-car-rental/V1/database"
-	helper "github.com/rupesh40/go-car-rental/V1/helpers"
-	"github.com/rupesh40/go-car-rental/V1/models"
+	"github.com/rupesh40/CarRental-Go/database"
+	helper "github.com/rupesh40/CarRental-Go/helpers"
+	"github.com/rupesh40/CarRental-Go/models"
 	"golang.org/x/crypto/bcrypt"
 	"github.com/google/uuid"
 )

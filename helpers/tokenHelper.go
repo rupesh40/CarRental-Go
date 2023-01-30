@@ -6,8 +6,8 @@ import (
 	"log"
 	"os"
 	"time"
-	"github.com/rupesh40/go-car-rental/V1/database"
-	"github.com/rupesh40/go-car-rental/V1/models"
+	"github.com/rupesh40/CarRental-Go/database"
+	"github.com/rupesh40/CarRental-Go/models"
 	jwt "github.com/dgrijalva/jwt-go"
 
 )

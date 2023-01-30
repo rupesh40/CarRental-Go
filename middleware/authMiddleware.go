@@ -5,9 +5,9 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	helper "github.com/rupesh40/go-car-rental/V1/helpers"
-	"github.com/rupesh40/go-car-rental/V1/database"
-	"github.com/rupesh40/go-car-rental/V1/models"
+	helper "github.com/rupesh40/CarRental-Go/helpers"
+	"github.com/rupesh40/CarRental-Go/database"
+	"github.com/rupesh40/CarRental-Go/models"
 
 )
 

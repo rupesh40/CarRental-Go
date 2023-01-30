@@ -4,7 +4,7 @@ import (
 	"github.com/99designs/gqlgen/graphql/handler"
 	"github.com/99designs/gqlgen/graphql/playground"
 	"github.com/gin-gonic/gin"
-	"github.com/rupesh40/go-car-rental/V1/graph"
+	"github.com/rupesh40/CarRental-Go/graph"
 )
 
 func graphqlHandler() gin.HandlerFunc {

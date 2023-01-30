@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 	"github.com/gin-gonic/gin"
-	"github.com/rupesh40/go-car-rental/V1/routes"
-	"github.com/rupesh40/go-car-rental/V1/database"
+	"github.com/rupesh40/CarRental-Go/routes"
+	"github.com/rupesh40/CarRental-Go/database"
 
 )
 

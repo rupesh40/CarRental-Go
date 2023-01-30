@@ -9,7 +9,7 @@ import (
 	"github.com/joho/godotenv"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
-	"github.com/rupesh40/go-car-rental/V1/models"
+	"github.com/rupesh40/CarRental-Go/models"
 	
 
 )

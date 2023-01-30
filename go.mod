@@ -1,4 +1,4 @@
-module github.com/rupesh40/go-car-rental/V1
+module github.com/rupesh40/CarRental-Go
 
 go 1.18
 

@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/rupesh40/go-car-rental/V1/database"
-	"github.com/rupesh40/go-car-rental/V1/models"
+	"github.com/rupesh40/CarRental-Go/database"
+	"github.com/rupesh40/CarRental-Go/models"
 	"github.com/google/uuid"
 )
 
